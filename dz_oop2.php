@@ -47,7 +47,8 @@ class Programmer extends Person implements LoveFishing
     public function fishing()
     {
         echo 'I go fishing in the summer';
-    }
+  
+  }
 
     public function  getInfo()
     {
@@ -66,7 +67,7 @@ class Mechanic extends Person
     }
 }
 
-class Driver extends Person implements CanDrive
+class Driver extends Person implements Transport
 {
     public function printFavoriteFood()
     {
@@ -79,7 +80,7 @@ class Driver extends Person implements CanDrive
     }
 }
 
-interface CanDrive
+interface Transport
 {
     public function drive();
 }
